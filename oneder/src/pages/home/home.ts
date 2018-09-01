@@ -35,9 +35,7 @@ export class HomePage {
     this.geolocation.getCurrentPosition().then(resp => {
       this.lat= resp.coords.latitude;
       this.lng = resp.coords.longitude;
-
-      this.lat= 1.2757465;
-      this.lng = 103.7995801;
+      
       
       this.dLat = this.dn/this.R;
       this.dLng = this.de/(this.R*Math.cos(Math.PI*this.lat/180));
