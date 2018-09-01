@@ -63,6 +63,13 @@ export class HomePage {
             console.log(curloc);
           });
 
+      this.api  = "https://developers.onemap.sg/privateapi/themesvc/retrieveTheme?queryName=communityclubs&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjE5NjcsInVzZXJfaWQiOjE5NjcsImVtYWlsIjoia2FpY2hlbmcxMDdAZ21haWwuY29tIiwiZm9yZXZlciI6ZmFsc2UsImlzcyI6Imh0dHA6XC9cL29tMi5kZmUub25lbWFwLnNnXC9hcGlcL3YyXC91c2VyXC9zZXNzaW9uIiwiaWF0IjoxNTM1Nzc0ODE0LCJleHAiOjE1MzYyMDY4MTQsIm5iZiI6MTUzNTc3NDgxNCwianRpIjoiMTYwNGZiYWFmNGU3MDA0Zjg1ZmRiN2NmYzkyOWE3ZjQifQ.u3I2F87wL6C7yY0dHNfpUP-hPNo-iOMwvEEoOmV8SE4&extents="+this.latO+","+this.lngO+","+this.lat1+","+this.lng1+"";
+      this.oneMap.updateApi(this.api);
+
+      this.oneMap.getLocation().subscribe(curloc =>{
+          console.log(curloc);
+        });
+
      }).catch(error => {
        console.log('Error getting location', error)
       });
