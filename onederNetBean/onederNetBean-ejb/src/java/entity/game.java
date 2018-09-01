@@ -13,7 +13,7 @@ import javax.persistence.Id;
 
 /**
  *
- * @author Kai Cheng
+ * @author Kai Chen
  */
 @Entity
 public class game implements Serializable {
