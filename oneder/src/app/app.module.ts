@@ -6,21 +6,25 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { ProfilePage } from '../pages/profile/profile';
 import { MatchesPage } from '../pages/matches/matches';
+import { PlayersPage } from '../pages/players/players';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { OneMapProvider } from '../providers/one-map/one-map';
+import { CMatchPage } from '../pages/c-match/c-match';
+import { TimerPage } from '../pages/timer/timer';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     ProfilePage,
-    MatchesPage
+    MatchesPage,
+    PlayersPage,
+    CMatchPage,
+    TimerPage
   ],
   imports: [
     BrowserModule,
@@ -32,10 +36,13 @@ import { OneMapProvider } from '../providers/one-map/one-map';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     ProfilePage,
-    MatchesPage
+    MatchesPage,
+    PlayersPage,
+    CMatchPage,
+    TimerPage
   ],
+
   providers: [
     StatusBar,
     SplashScreen,

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the MatchesPage page.
@@ -14,11 +15,22 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class MatchesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+  public alertCtrl: AlertController) {
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MatchesPage');
+  }
+
+  doAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Confirmed Booking!',
+      message: 'Your badminton match has been scheduled!',
+      buttons: ['Ok']
+    });
+    alert.present()
   }
 
 }
