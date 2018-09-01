@@ -42,8 +42,6 @@ public class Game implements Serializable {
     public Game() {
     }
     
-    
-    
     // For current player number use array size    
     public int getCurentPlayerNumber() {
         return players.size();
@@ -56,157 +54,91 @@ public class Game implements Serializable {
     public void setGameId(Long gameId) {
         this.gameId = gameId;
     }
-    
-    /**
-     * @return the creatorId
-     */
+
     public int getCreatorId() {
         return creatorId;
     }
 
-    /**
-     * @param creatorId the creatorId to set
-     */
     public void setCreatorId(int creatorId) {
         this.creatorId = creatorId;
     }
 
-    /**
-     * @return the locationId
-     */
     public int getLocationId() {
         return locationId;
     }
 
-    /**
-     * @param locationId the locationId to set
-     */
     public void setLocationId(int locationId) {
         this.locationId = locationId;
     }
 
-    /**
-     * @return the gameType
-     */
     public String getGameType() {
         return gameType;
     }
 
-    /**
-     * @param gameType the gameType to set
-     */
     public void setGameType(String gameType) {
         this.gameType = gameType;
     }
 
-    /**
-     * @return the minPlayers
-     */
     public int getMinPlayers() {
         return minPlayers;
     }
 
-    /**
-     * @param minPlayers the minPlayers to set
-     */
     public void setMinPlayers(int minPlayers) {
         this.minPlayers = minPlayers;
     }
 
-    /**
-     * @return the maxPlayers
-     */
     public int getMaxPlayers() {
         return maxPlayers;
     }
 
-    /**
-     * @param maxPlayers the maxPlayers to set
-     */
     public void setMaxPlayers(int maxPlayers) {
         this.maxPlayers = maxPlayers;
     }
 
-    /**
-     * @return the timeOfCreation
-     */
     public Date getTimeOfCreation() {
         return timeOfCreation;
     }
 
-    /**
-     * @param timeOfCreation the timeOfCreation to set
-     */
     public void setTimeOfCreation(Date timeOfCreation) {
         this.timeOfCreation = timeOfCreation;
     }
 
-    /**
-     * @return the players
-     */
     public List<Player> getPlayers() {
         return players;
     }
 
-    /**
-     * @param players the players to set
-     */
     public void setPlayers(List<Player> players) {
         this.players = players;
     }
-    
-    /**
-     * @return the startTime
-     */
+
     public Date getStartTime() {
         return startTime;
     }
 
-    /**
-     * @param startTime the startTime to set
-     */
     public void setStartTime(Date startTime) {
         this.startTime = startTime;
     }
 
-    /**
-     * @return the startDate
-     */
     public Date getStartDate() {
         return startDate;
     }
 
-    /**
-     * @param startDate the startDate to set
-     */
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
-    /**
-     * @return the endTime
-     */
     public Date getEndTime() {
         return endTime;
     }
 
-    /**
-     * @param endTime the endTime to set
-     */
     public void setEndTime(Date endTime) {
         this.endTime = endTime;
     }
 
-    /**
-     * @return the endDate
-     */
     public Date getEndDate() {
         return endDate;
     }
 
-    /**
-     * @param endDate the endDate to set
-     */
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
@@ -220,7 +152,6 @@ public class Game implements Serializable {
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
         if (!(object instanceof Game)) {
             return false;
         }
