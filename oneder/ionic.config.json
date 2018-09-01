@@ -1,7 +1,14 @@
 {
   "name": "oneder",
+  "app_id": "",
   "integrations": {
     "cordova": {}
   },
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/oneMap",
+      "proxyUrl": "https://developers.onemap.sg"
+    }
+  ]
 }
