@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
-
+import { ProfilePage } from '../profile/profile';
 /**
  * Generated class for the MatchesPage page.
  *
@@ -14,6 +14,7 @@ import { AlertController } from 'ionic-angular';
   templateUrl: 'matches.html',
 })
 export class MatchesPage {
+  Profile = ProfilePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
   public alertCtrl: AlertController) {

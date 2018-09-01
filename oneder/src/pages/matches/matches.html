@@ -19,12 +19,19 @@
   <div class="card-background-page">
     <ion-card [navPush]="">
       
-      <div class="card-title">30 SEPTEMBER 2018, 1400 - 1600</div>
+      <div class="card-title">10 SEPTEMBER 2018, 1400 - 1600</div>
       <ion-row>
         <ion-col style="font-size: 16px">
-          <ion-label style="margin-left: 30px"><b>Tampines Sports Hub</b></ion-label>
+          <ion-label style="margin-left: 30px"><b>Telok Blangah CC</b></ion-label>
         </ion-col>
       </ion-row>
+      <ion-row>
+          <ion-col style="font-size: 16px">
+          </ion-col>
+          <ion-col style="font-size: 16px">
+              <ion-label style="margin-left: 30px"><b>3 of 4 players</b></ion-label>
+            </ion-col>
+        </ion-row>
       <button ion-button block color="danger" (click)="doAlert()">Join Game</button>
     </ion-card>
     <ion-card [navPush]="">
@@ -32,21 +39,37 @@
       <div class="card-title">30 SEPTEMBER 2018, 1600 - 1800</div>
       <ion-row>
         <ion-col style="font-size: 16px">
-          <ion-label style="margin-left: 30px"><b>Tampines Sports Hub</b></ion-label>
+          <ion-label style="margin-left: 30px"><b>Kreta Ayer CC</b></ion-label>
         </ion-col>
       </ion-row>
+      <ion-row>
+          <ion-col style="font-size: 16px">
+          </ion-col>
+          <ion-col style="font-size: 16px">
+              <ion-label style="margin-left: 30px"><b>2 of 4 players</b></ion-label>
+            </ion-col>
+        </ion-row>      
       <button ion-button block color="danger" (click)="doAlert()">Join Game</button>
     </ion-card>
-    <ion-card [navPush]="">
+    <ion-card [navPush]="Profile">
       
       <div class="card-title">2 NOVEMBER 2018, 1400 - 1600</div>
       <ion-row>
         <ion-col style="font-size: 16px">
-          <ion-label style="margin-left: 30px"><b>Tampines Sports Hub</b></ion-label>
+          <ion-label style="margin-left: 30px"><b>Telok Blangah CC</b></ion-label>
         </ion-col>
       </ion-row>
+      <ion-row>
+          <ion-col style="font-size: 16px">
+          </ion-col>
+          <ion-col style="font-size: 16px">
+              <ion-label style="margin-left: 30px"><b>1 of 4 players</b></ion-label>
+              <ion-label style="margin-left: 30px"><b>Min 2 to start</b></ion-label>
+            </ion-col>
+        </ion-row>      
       <button ion-button block color="danger" (click)="doAlert()">Join Game</button>
     </ion-card>
+    
 
   </div>
 </ion-content>

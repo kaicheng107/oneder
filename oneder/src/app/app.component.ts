@@ -8,7 +8,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { MatchesPage } from '../pages/matches/matches';
 import { PlayersPage } from '../pages/players/players';
 import { CMatchPage } from '../pages/c-match/c-match';
-import { TimerPage } from '../pages/timer/timer';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -30,7 +30,6 @@ export class MyApp {
       { title: 'Matches', component: MatchesPage },
       { title: 'Players', component: PlayersPage },
       { title: 'Make it Happen', component: CMatchPage },
-      { title: 'Timer', component: TimerPage }
     ];
 
   }

@@ -14,7 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { OneMapProvider } from '../providers/one-map/one-map';
 import { CMatchPage } from '../pages/c-match/c-match';
-import { TimerPage } from '../pages/timer/timer';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { TimerPage } from '../pages/timer/timer';
     MatchesPage,
     PlayersPage,
     CMatchPage,
-    TimerPage
+    
   ],
   imports: [
     BrowserModule,
@@ -40,7 +40,7 @@ import { TimerPage } from '../pages/timer/timer';
     MatchesPage,
     PlayersPage,
     CMatchPage,
-    TimerPage
+
   ],
 
   providers: [
