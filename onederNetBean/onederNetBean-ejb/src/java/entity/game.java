@@ -16,7 +16,7 @@ import javax.persistence.Id;
  * @author Kai Cheng
  */
 @Entity
-public class person implements Serializable {
+public class game implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -41,10 +41,10 @@ public class person implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof person)) {
+        if (!(object instanceof game)) {
             return false;
         }
-        person other = (person) object;
+        game other = (game) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
@@ -53,7 +53,7 @@ public class person implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.person[ id=" + id + " ]";
+        return "entity.game[ id=" + id + " ]";
     }
     
 }

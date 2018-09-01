@@ -1,6 +1,5 @@
 {
   "name": "oneder",
-  "app_id": "",
   "integrations": {
     "cordova": {}
   },
