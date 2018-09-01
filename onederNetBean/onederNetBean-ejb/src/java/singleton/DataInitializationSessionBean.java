@@ -7,7 +7,7 @@ package singleton;
 
 import entity.Location;
 import entity.Player;
-import exception.LocationNotFoundException;
+import exception.NotFoundException;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
@@ -43,7 +43,7 @@ public class DataInitializationSessionBean {
         {
             locationControllerLocal.retrieveLocationById(1);
         }
-        catch(LocationNotFoundException ex)
+        catch(NotFoundException ex)
         {
             initializeData();
         }

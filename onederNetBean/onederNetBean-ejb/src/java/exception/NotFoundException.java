@@ -9,12 +9,12 @@ package exception;
  *
  * @author Kian Wee
  */
-public class LocationNotFoundException extends Exception {
+public class NotFoundException extends Exception {
 
-    public LocationNotFoundException() {
+    public NotFoundException() {
     }
 
-    public LocationNotFoundException(String msg) {
+    public NotFoundException(String msg) {
         super(msg);
     }
 }
