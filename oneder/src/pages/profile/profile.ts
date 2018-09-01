@@ -22,17 +22,16 @@ export class ProfilePage {
   constructor(public navCtrl: NavController, 
     public navParams: NavParams,  
     public playerService: PlayerServiceProvider) {
+      this.playerService.getPlayer().subscribe(rep =>{
+        console.log(rep);
+        this.play=rep;
+        console.log(this.play.name);
+        console.log(this.play.aggregatedRating);
+      });
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
-
-    this.playerService.getPlayer().subscribe(rep =>{
-      console.log(rep);
-      this.play=rep;
-      console.log(this.play.name);
-      console.log(this.play.aggregatedRating);
-    });
     
   }
 
