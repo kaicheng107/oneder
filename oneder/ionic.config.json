@@ -6,8 +6,8 @@
   "type": "ionic-angular",
   "proxies": [
     {
-      "path": "/oneMap",
-      "proxyUrl": "https://developers.onemap.sg"
+      "path": "/api",
+      "proxyUrl": "http://localhost:8080/oneder-rest/webresources"
     }
   ]
 }
