@@ -3,3 +3,10 @@
 /onederNetBean/nbproject/private/
 /onederNetBean/onederNetBean-war/nbproject/private/
 /onederNetBean/onederNetBean-ejb/nbproject/private/
+/onederNetBean/onederNetBean-ejb/build/
+/onederNetBean/dist/
+/onederNetBean/build/
+/onederNetBean/onederNetBean-ejb/dist/
+/onederNetBean/onederNetBean-war/dist/
+/onederNetBean/onederNetBean-war/build/
+onederNetBean/onederNetBean-ejb/setup/glassfish-resources.xml
