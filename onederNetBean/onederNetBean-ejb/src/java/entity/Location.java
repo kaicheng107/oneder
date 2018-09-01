@@ -20,7 +20,12 @@ public class Location implements Serializable {
     private String address_street_name;
     private int postal_code;
     private double cc_long;
-    private double cc_lat;    
+    private double cc_lat;
+
+    public Location() {
+    }
+    
+    
     
     public Location(String cc_name, String cc_type, String address_building_name, int address_blk_number, String address_street_name, int postal_code, double cc_long, double cc_lat) {
         this.cc_name = cc_name;

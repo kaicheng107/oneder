@@ -38,6 +38,11 @@ public class Game implements Serializable {
     
     @OneToMany(cascade={CascadeType.ALL}, fetch = FetchType.EAGER)
     private List<Player> players;    
+
+    public Game() {
+    }
+    
+    
     
     // For current player number use array size    
     public int getCurentPlayerNumber() {

@@ -8,7 +8,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 @Stateless
-@Local(LocationController.class)
 public class LocationController implements LocationControllerLocal {
     
     @PersistenceContext(unitName = "onederNetBean-ejbPU")

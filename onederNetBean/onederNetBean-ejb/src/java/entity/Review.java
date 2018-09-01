@@ -24,6 +24,9 @@ public class Review implements Serializable {
     private int skillRating;
     @Temporal(TemporalType.TIMESTAMP)
     private Date timeOfCreation;    // Timestamp of review creation
+    
+        public Review() {
+    }
 
     public Long getReviewId() {
         return reviewId;
@@ -32,6 +35,7 @@ public class Review implements Serializable {
     public void setReviewId(Long reviewId) {
         this.reviewId = reviewId;
     }
+
     
     /**
      * @return the reviewerId

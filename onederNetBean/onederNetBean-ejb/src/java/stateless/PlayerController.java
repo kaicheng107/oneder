@@ -7,7 +7,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 @Stateless
-@Local(PlayerController.class)
 public class PlayerController implements PlayerControllerLocal {
 
     @PersistenceContext(unitName = "onederNetBean-ejbPU")

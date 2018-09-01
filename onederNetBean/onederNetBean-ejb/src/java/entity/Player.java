@@ -30,6 +30,11 @@ public class Player implements Serializable {
     private List<Game> games;
     @OneToMany(cascade={CascadeType.ALL}, fetch = FetchType.EAGER)
     private List<Review> reviews;
+
+    public Player() {
+    }
+    
+    
     
     public Player(String name, String username, String email, int phoneNumber, double aggregatedRating){
         this.name = name;

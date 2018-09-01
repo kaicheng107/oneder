@@ -6,7 +6,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 @Stateless
-@Local(ReviewController.class)
 public class ReviewController implements ReviewControllerLocal {
 
     @PersistenceContext(unitName = "onederNetBean-ejbPU")
