@@ -7,6 +7,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { ProfilePage } from '../pages/profile/profile';
+import { MatchesPage } from '../pages/matches/matches';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,7 +18,9 @@ import { OneMapProvider } from '../providers/one-map/one-map';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    ProfilePage,
+    MatchesPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { OneMapProvider } from '../providers/one-map/one-map';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    ProfilePage,
+    MatchesPage
   ],
   providers: [
     StatusBar,
