@@ -15,5 +15,140 @@
 
 
 <ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>5 Community Centres near you:</ion-label>
+      <ion-select [(ngModel)]="communityCentre">
+        <ion-option value="tpw">Tampines West CC</ion-option>
+        <ion-option value="tpe">Tampines East CC</ion-option>
+        <ion-option value="tpn">Tampines North CC</ion-option>
+        <ion-option value="tpc">Tampines Central CC</ion-option>
+        <ion-option value="tpcg">Tampines Changkat CC</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Set Date:</ion-label>
+      <ion-select [(ngModel)]="day">
+        <ion-option value="d1">1</ion-option>
+        <ion-option value="d2">2</ion-option>
+        <ion-option value="d3">3</ion-option>
+        <ion-option value="d4">4</ion-option>
+        <ion-option value="d5">5</ion-option>
+        <ion-option value="d5">6</ion-option>
+        <ion-option value="d5">7</ion-option>
+        <ion-option value="d5">8</ion-option>
+        <ion-option value="d5">9</ion-option>
+        <ion-option value="d5">10</ion-option>
+        <ion-option value="d5">11</ion-option>
+        <ion-option value="d5">12</ion-option>
+        <ion-option value="d5">13</ion-option>
+        <ion-option value="d5">14</ion-option>
+        <ion-option value="d5">15</ion-option>
+        <ion-option value="d5">16</ion-option>
+        <ion-option value="d5">17</ion-option>
+        <ion-option value="d5">18</ion-option>
+        <ion-option value="d5">19</ion-option>
+        <ion-option value="d5">20</ion-option>
+        <ion-option value="d5">21</ion-option>
+        <ion-option value="d5">22</ion-option>
+        <ion-option value="d5">23</ion-option>
+        <ion-option value="d5">24</ion-option>
+        <ion-option value="d5">25</ion-option>
+        <ion-option value="d5">26</ion-option>
+        <ion-option value="d5">27</ion-option>
+        <ion-option value="d5">28</ion-option>
+        <ion-option value="d5">29</ion-option>
+        <ion-option value="d5">30</ion-option>
+      </ion-select>
+      <ion-select [(ngModel)]="month">
+        <ion-option value="m1">Jan</ion-option>
+        <ion-option value="m2">Feb</ion-option>
+        <ion-option value="m3">Mar</ion-option>
+        <ion-option value="m4">Apr</ion-option>
+        <ion-option value="m5">May</ion-option>
+        <ion-option value="m6">Jun</ion-option>
+        <ion-option value="m7">Jul</ion-option>
+        <ion-option value="m8">Aug</ion-option>
+        <ion-option value="m9">Sep</ion-option>
+        <ion-option value="m10">Oct</ion-option>
+        <ion-option value="m11">Nov</ion-option>
+        <ion-option value="m12">Dec</ion-option>
+      </ion-select> 
+      <ion-select [(ngModel)]="year">
+        <ion-option value="y1">2018</ion-option>
+        <ion-option value="y2">2019</ion-option>
+        <ion-option value="y3">2020</ion-option>
+      </ion-select>      
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Set Start Time:</ion-label>      
+        <ion-input type="text" [(ngModel)]="startTime" placeholder="Input Time {{existName}}" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Input Time'"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Set End Time:</ion-label>      
+        <ion-input type="text" [(ngModel)]="endTime" placeholder="Input Time {{existName}}" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Input Time'"></ion-input>
+    </ion-item>
+
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Game Type:</ion-label>
+        <ion-select [(ngModel)]="gameType">
+          <ion-option value="singles">Singles</ion-option>
+          <ion-option value="doubles">Doubles</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Min Players: 2</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Max Players:</ion-label>
+        <ion-select [(ngModel)]="gameType">
+          <ion-option value="num1">1</ion-option>
+          <ion-option value="num2">2</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>   
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Booking Fee: $13</ion-label>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-item>
+    <ion-label>Only you can invite others</ion-label>
+    <ion-toggle checked="true"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mark game as private</ion-label>
+    <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+  <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        
+      </ion-col>
+      <ion-col>
+          <button ion-button color="danger" clear>Make it happen ></button>
+      </ion-col>
+  </ion-row>
+  
 
 </ion-content>
