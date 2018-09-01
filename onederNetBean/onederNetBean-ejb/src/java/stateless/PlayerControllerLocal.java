@@ -1,11 +1,9 @@
 package stateless;
 
 import entity.Player;
-<<<<<<< HEAD
 import javax.ejb.Local;
-=======
 import java.util.List;
->>>>>>> master
+
 
 @Local
 public interface PlayerControllerLocal {

@@ -1,13 +1,9 @@
 package stateless;
 
 import entity.Location;
-<<<<<<< HEAD
-import exception.LocationNotFoundException;
-import javax.ejb.Local;
-=======
 import exception.NotFoundException;
 import java.util.List;
->>>>>>> master
+import javax.ejb.Local;
 
 @Local
 public interface LocationControllerLocal {
