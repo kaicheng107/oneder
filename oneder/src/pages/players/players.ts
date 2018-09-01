@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { ProfilePage } from '../profile/profile';
+
 /**
  * Generated class for the PlayersPage page.
  *

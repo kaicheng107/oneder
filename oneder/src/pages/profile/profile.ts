@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { PlayerServiceProvider } from '../../providers/player-service/player-service';
+import {Player} from '../../entities/Player'
 
 /**
  * Generated class for the ProfilePage page.
@@ -14,11 +16,24 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  play: Player;
+
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams,  
+    public playerService: PlayerServiceProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
+
+    this.playerService.getPlayer().subscribe(rep =>{
+      console.log(rep);
+      this.play=rep;
+      console.log(this.play.name);
+      console.log(this.play.aggregatedRating);
+    });
   }
 
+  
 }

@@ -60,9 +60,7 @@ export class HomePage {
         this.oneMap.updateApi(this.api);
 
         this.oneMap.getLocation().subscribe(curloc =>{
-            console.log(curloc.GeocodeInfo[0].ROAD);
-            //.GeocodeInfo[0].ROADs
-            this.location = curloc.GeocodeInfo[0].ROAD;
+            console.log(curloc);
           });
 
      }).catch(error => {

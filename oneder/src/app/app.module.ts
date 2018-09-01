@@ -9,11 +9,12 @@ import { HomePage } from '../pages/home/home';
 import { ProfilePage } from '../pages/profile/profile';
 import { MatchesPage } from '../pages/matches/matches';
 import { PlayersPage } from '../pages/players/players';
+import { CMatchPage } from '../pages/c-match/c-match';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { OneMapProvider } from '../providers/one-map/one-map';
-import { CMatchPage } from '../pages/c-match/c-match';
+import { PlayerServiceProvider } from '../providers/player-service/player-service';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { CMatchPage } from '../pages/c-match/c-match';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Geolocation,
-    OneMapProvider
+    OneMapProvider,
+    PlayerServiceProvider
   ]
 })
 export class AppModule {}

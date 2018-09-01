@@ -30,6 +30,8 @@ public class PlayerController implements PlayerControllerLocal {
     public Player retrievePlayerById(Long playerId) {
         Query query = em.createQuery("SELECT p FROM Player p WHERE p.playerId = :playerId");
         query.setParameter("playerId", playerId);
+        List<Player> pa = query.getResultList();
+        System.out.println("*****************player***************"+pa.size());
         if (!query.getResultList().isEmpty()) {
             Player p = (Player) query.getSingleResult();
             return p;
