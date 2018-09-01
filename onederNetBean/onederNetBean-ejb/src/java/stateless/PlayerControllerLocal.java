@@ -2,7 +2,9 @@ package stateless;
 
 import entity.Player;
 import java.util.List;
+import javax.ejb.Local;
 
+@Local
 public interface PlayerControllerLocal {
     
     public Player createNewPlayer(Player player);

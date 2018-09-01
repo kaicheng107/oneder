@@ -9,7 +9,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 @Stateless
-@Local(GameController.class)
 public class GameController implements GameControllerLocal {
 
     @PersistenceContext(unitName = "onederNetBean-ejbPU")

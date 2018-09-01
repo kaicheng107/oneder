@@ -25,6 +25,9 @@ public class Review implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date timeOfCreation;    // Timestamp of review creation
 
+    public Review() {
+    }    
+
     public Long getReviewId() {
         return reviewId;
     }
@@ -33,100 +36,58 @@ public class Review implements Serializable {
         this.reviewId = reviewId;
     }
     
-    /**
-     * @return the reviewerId
-     */
     public int getReviewerId() {
         return reviewerId;
     }
 
-    /**
-     * @param reviewerId the reviewerId to set
-     */
     public void setReviewerId(int reviewerId) {
         this.reviewerId = reviewerId;
     }
 
-    /**
-     * @return the revieweeId
-     */
     public int getRevieweeId() {
         return revieweeId;
     }
 
-    /**
-     * @param revieweeId the revieweeId to set
-     */
     public void setRevieweeId(int revieweeId) {
         this.revieweeId = revieweeId;
     }
 
-    /**
-     * @return the gameId
-     */
     public int getGameId() {
         return gameId;
     }
 
-    /**
-     * @param gameId the gameId to set
-     */
     public void setGameId(int gameId) {
         this.gameId = gameId;
     }
 
-    /**
-     * @return the comments
-     */
     public String getComments() {
         return comments;
     }
 
-    /**
-     * @param comments the comments to set
-     */
     public void setComments(String comments) {
         this.comments = comments;
     }
 
-    /**
-     * @return the gameRating
-     */
     public int getGameRating() {
         return gameRating;
     }
 
-    /**
-     * @param gameRating the gameRating to set
-     */
     public void setGameRating(int gameRating) {
         this.gameRating = gameRating;
     }
 
-    /**
-     * @return the timeOfCreation
-     */
     public Date getTimeOfCreation() {
         return timeOfCreation;
     }
 
-    /**
-     * @param timeOfCreation the timeOfCreation to set
-     */
     public void setTimeOfCreation(Date timeOfCreation) {
         this.timeOfCreation = timeOfCreation;
     }
-    
-    /**
-     * @return the skillRating
-     */
+
     public int getSkillRating() {
         return skillRating;
     }
 
-    /**
-     * @param skillRating the skillRating to set
-     */
     public void setSkillRating(int skillRating) {
         this.skillRating = skillRating;
     }
@@ -140,7 +101,6 @@ public class Review implements Serializable {
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
         if (!(object instanceof Review)) {
             return false;
         }

@@ -2,7 +2,9 @@ package stateless;
 
 import entity.Review;
 import java.util.List;
+import javax.ejb.Local;
 
+@Local
 public interface ReviewControllerLocal {
     
     public Review createNewReview(Review review);

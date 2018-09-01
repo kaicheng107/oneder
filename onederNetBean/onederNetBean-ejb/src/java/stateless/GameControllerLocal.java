@@ -4,6 +4,7 @@ import entity.Game;
 import java.util.List;
 import javax.ejb.Local;
 
+@Local
 public interface GameControllerLocal {
     
     public Game createNewGame(Game game);

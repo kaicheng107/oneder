@@ -10,7 +10,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 @Stateless
-@Local(LocationController.class)
 public class LocationController implements LocationControllerLocal {
     
     @PersistenceContext(unitName = "onederNetBean-ejbPU")
