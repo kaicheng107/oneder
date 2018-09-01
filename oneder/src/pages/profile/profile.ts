@@ -33,6 +33,7 @@ export class ProfilePage {
       console.log(this.play.name);
       console.log(this.play.aggregatedRating);
     });
+    
   }
 
   
