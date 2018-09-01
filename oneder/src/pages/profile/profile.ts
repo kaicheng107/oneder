@@ -17,7 +17,7 @@ import {Player} from '../../entities/Player'
 export class ProfilePage {
 
 
-  play: Player;
+  play: any;
 
   constructor(public navCtrl: NavController, 
     public navParams: NavParams,  
