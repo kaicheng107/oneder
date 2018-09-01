@@ -1,5 +1,6 @@
 package stateless;
 
+import entity.Player;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -15,5 +16,11 @@ public class PlayerController implements PlayerControllerLocal {
     public PlayerController() {
     }
     
-    
+    @Override
+    public Player createNewPlayer(Player player) {
+        em.persist(player);
+        em.flush();
+        
+        return player;
+    }
 }

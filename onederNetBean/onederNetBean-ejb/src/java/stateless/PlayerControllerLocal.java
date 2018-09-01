@@ -1,7 +1,8 @@
 package stateless;
 
-import javax.ejb.Local;
+import entity.Player;
 
 public interface PlayerControllerLocal {
     
+    public Player createNewPlayer(Player player);
 }

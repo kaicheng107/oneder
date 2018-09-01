@@ -23,13 +23,21 @@ public class Player implements Serializable {
     private String name;            // Retrieved from OneService App
     private String username;        // Retrieved from OneService App
     private String email;           // Retrieved from OneService App
-    private String phoneNumber;     // Retrieved from OneService App
+    private int phoneNumber;     // Retrieved from OneService App
     private double aggregatedRating;
 
     @OneToMany(cascade={CascadeType.ALL}, fetch = FetchType.EAGER)
     private List<Game> games;
     @OneToMany(cascade={CascadeType.ALL}, fetch = FetchType.EAGER)
-    private List<Review> reviews;    
+    private List<Review> reviews;
+    
+    public Player(String name, String username, String email, int phoneNumber, double aggregatedRating){
+        this.name = name;
+        this.username = username;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.aggregatedRating = aggregatedRating;
+    }
 
     public Long getPlayerId() {
         return playerId;
@@ -84,14 +92,14 @@ public class Player implements Serializable {
     /**
      * @return the phoneNumber
      */
-    public String getPhoneNumber() {
+    public int getPhoneNumber() {
         return phoneNumber;
     }
 
     /**
      * @param phoneNumber the phoneNumber to set
      */
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

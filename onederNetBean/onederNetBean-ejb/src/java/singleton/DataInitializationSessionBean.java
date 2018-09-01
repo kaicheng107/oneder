@@ -6,6 +6,7 @@
 package singleton;
 
 import entity.Location;
+import entity.Player;
 import exception.LocationNotFoundException;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
@@ -15,6 +16,7 @@ import javax.ejb.Startup;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import stateless.LocationControllerLocal;
+import stateless.PlayerControllerLocal;
 
 @Singleton
 @LocalBean
@@ -25,6 +27,8 @@ public class DataInitializationSessionBean {
     @PersistenceContext(unitName = "onederNetBean-ejbPU")
     private EntityManager em;
     
+    @EJB
+    private PlayerControllerLocal playerControllerLocal;
     @EJB
     private LocationControllerLocal locationControllerLocal;
     
@@ -46,6 +50,12 @@ public class DataInitializationSessionBean {
     }
     
     private void initializeData() {
+        
+        playerControllerLocal.createNewPlayer(new Player("John", "john", "john@gmail.com", 91234567, 5.0));    
+        playerControllerLocal.createNewPlayer(new Player("Jane", "jane", "jane@gmail.com", 92345678, 5.0)); 
+        playerControllerLocal.createNewPlayer(new Player("Kenny Wu", "kenny", "kenny@gmail.com", 93456789, 5.0)); 
+        playerControllerLocal.createNewPlayer(new Player("Sarah", "sarah", "sarah@gmail.com", 93334567, 5.0)); 
+        
         locationControllerLocal.createNewLocation(new Location("Pek Kio CC","Community Centre", "",21,"Gloucester Road",219458,103.8513738,1.313058658));
         locationControllerLocal.createNewLocation(new Location("Potong Pasir CC","Community Club", "",6,"Potong Pasir Avenue 2",358361,103.8670368,1.332535908));
         locationControllerLocal.createNewLocation(new Location("Punggol 21 CC","Community Club", "",80,"Punggol Field",828815,103.9134641,1.393606243));
