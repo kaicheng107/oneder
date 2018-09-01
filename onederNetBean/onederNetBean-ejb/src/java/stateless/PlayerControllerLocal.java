@@ -3,7 +3,7 @@ package stateless;
 import entity.Player;
 import javax.ejb.Local;
 import java.util.List;
-
+import javax.ejb.Local;
 
 @Local
 public interface PlayerControllerLocal {

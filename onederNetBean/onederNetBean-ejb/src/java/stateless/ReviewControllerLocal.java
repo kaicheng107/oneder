@@ -4,7 +4,7 @@ package stateless;
 import javax.ejb.Local;
 import entity.Review;
 import java.util.List;
-
+import javax.ejb.Local;
 
 @Local
 public interface ReviewControllerLocal {
