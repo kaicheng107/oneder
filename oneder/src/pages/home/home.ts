@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import {Geolocation} from '@ionic-native/geolocation';
 import { OneMapProvider } from '../../providers/one-map/one-map';
 import {HttpClient} from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
+import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'page-home',
@@ -11,6 +11,7 @@ import { Observable } from 'rxjs/Observable';
 })
 
 export class HomePage {
+  Profile = ProfilePage;
   lat: any;
   lng: any;
   api: string;
@@ -28,6 +29,7 @@ export class HomePage {
 
   location: string;
   constructor(public navCtrl: NavController, public geolocation: Geolocation, private oneMap: OneMapProvider,public http: HttpClient) {
+    
     this.api = this.oneMap.getApi();
   }
 
